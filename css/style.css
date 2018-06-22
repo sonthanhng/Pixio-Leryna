@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   opacity: 1;
   top: 0;
-  margin-top: 20px;
+  background-color: white;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
@@ -108,13 +108,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 16px;
+  line-height: 20px;
   position: relative;
 }
 #fh5co-header #navbar li a span {
   position: relative;
   display: block;
-  padding-bottom: 2px;
+  padding-bottom: 15px;
 }
 #fh5co-header #navbar li a span:before {
   content: "";
@@ -123,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #6173f4;
+  background-color: #FFC20F;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -137,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 #fh5co-header #navbar li a:hover {
-  color: #fff;
+  color: #FFC20F;
 }
 #fh5co-header #navbar li a:hover span:before {
   visibility: visible;
@@ -150,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header #navbar li.active a {
   background: transparent;
   background: none;
-  color: #fff;
+  color: #FFC20F;
 }
 #fh5co-header #navbar li.active a span:before {
   visibility: visible;
@@ -164,6 +166,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   padding-left: 0;
   color: #fff;
+  padding-top: 16px;
+  padding-bottom: 17px;
 }
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
