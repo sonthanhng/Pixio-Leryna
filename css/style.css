@@ -60,13 +60,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-header {
-  position: absolute;
   z-index: 99;
   width: 100%;
   opacity: 1;
   top: 0;
   background-color: white;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-header {
     margin-top: 0;
