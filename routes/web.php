@@ -12,8 +12,10 @@
 */
 
 Route::get('/', 'HomepageUIController@index');
-Route::get('/product', 'HomepageUIController@getProductPage');
-Route::get('/blog', 'HomepageUIController@getBlogPage');
+Route::get('/products', 'HomepageUIController@getProductPage');
+Route::get('/blogs', 'HomepageUIController@getBlogPage');
+Route::get('/products/{id}', 'HomepageUIController@getProductDetailPage');
+Route::get('/blogs/{id}', 'HomepageUIController@getBlogDetailPage');
 
 Route::get('/about', function () {
     return view('UI.about');

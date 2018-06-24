@@ -28,4 +28,18 @@ class HomepageUIController extends Controller
       }
       return view('UI.blog')->with(["blogs" => $blogs]);
     }
+    public function getBlogDetailPage($id) {
+      $blog = Blog::find($id);
+      $blogs = Blog::paginate(3);
+      for($i = 0; $i < count($blogs); $i++) {
+        $blogs[$i]->description = substr(Html2Text::convert($blogs[$i]->content), 0, min(strlen(Html2Text::convert($blogs[$i]->content)), 100));
+      }
+      return view('UI.blog-detail')->with(['blog' => $blog, 'blogs' => $blogs]);
+    }
+
+    public function getProductDetailPage($id) {
+      $product = Product::find($id);
+      $products = Product::paginate(6);
+      return view('UI.product-detail')->with(["product" => $product, "products" => $products]);
+    }
 }

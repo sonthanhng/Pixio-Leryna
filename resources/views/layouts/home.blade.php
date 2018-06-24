@@ -27,23 +27,23 @@
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="{{asset('css/animate.css')}}">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="{{asset('css/icomoon.css')}}">
 	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<link rel="stylesheet" href="{{asset('css/simple-line-icons.css')}}">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="{{asset('css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('css/custom.css')}}">
+	<link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 
 
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
   @yield('header')
 
 </head>
@@ -54,15 +54,15 @@
 		        <div class="navbar-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 		          	<a class="navbar-brand" href="/">
-									<img src="images/public/logo.png"/>
+									<img src="{{ asset('images/public/logo.png') }}"/>
 								</a>
 		        </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="/"><span>Trang chủ</span></a></li>
-		            <li><a href="/product"><span>Sản phẩm</span></a></li>
+		            <li><a href="/products"><span>Sản phẩm</span></a></li>
 		            <li><a href="/about"><span>Về Leryna</span></a></li>
-		            <li><a href="/blog"><span>Blog</span></a></li>
+		            <li><a href="/blogs"><span>Blog</span></a></li>
 		            <!-- <li><a href="/contact"><span>Liên hệ</span></a></li> -->
 		          </ul>
 		        </div>
@@ -82,18 +82,18 @@
 
 
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="{{ asset('js/jquery.min.js') }}"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
 	<!-- Owl Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 
 	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+	<script src="{{ asset('js/main.js') }}"></script>
 
 	</body>
 </html>

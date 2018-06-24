@@ -29,7 +29,7 @@
 							<img src="{{$product->thumbnailUrl}}"/>
 							<div class="product-description">
 								<span class="title">{{$product->title}}</span>
-								<a class="btn-buy-now">Mua ngay</a>
+								<a class="btn-buy-now" href="/products/{{$product->id}}">Mua ngay</a>
 							</div>
 						</div>
 						@endforeach
@@ -99,7 +99,7 @@
 								<p class="title">{{$blog->title}}</p>
 								<p class="content">{{$blog->description}}</p>
 							</div>
-							<a class="btn-read-more">Đọc tiếp..</a>
+							<a class="btn-read-more" href="/blogs/{{$blog->id}}">Đọc tiếp..</a>
 						</div>
 					</div>
 				@endforeach
