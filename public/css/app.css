@@ -8727,3 +8727,7 @@ button.close {
   margin-right: 10%;
 }
 
+.admin-page #product-id {
+  display: none;
+}
+

@@ -42,3 +42,9 @@ Route::group(['prefix' => 'api'], function () {
     Route::post('image', ['middleware' => 'auth', 'uses' => 'Api\ImageController@store']);
     Route::get('image/{image}', 'Api\ImageController@view');
 });
+
+Route::get('/admin-product', 'ProductController@index');
+Route::get('/upload-product', 'ProductController@viewUpload');
+Route::post('/admin-product/upload', 'ProductController@upload');
+Route::get('/admin-editProduct/{id}', 'ProductController@getDetail');
+Route::post('/admin-product/edit/', 'ProductController@edit');

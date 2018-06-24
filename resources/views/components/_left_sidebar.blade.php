@@ -26,8 +26,8 @@
             <span> Products</span>
           </div>
           <ul class="child-el-wrap">
-            <a href="/admin-service"><li>List Products</li></a>
-            <a href="/upload-service"><li>Upload Products</li></a>
+            <a href="/admin-product"><li>List Products</li></a>
+            <a href="/upload-product"><li>Upload Products</li></a>
           </ul>
         </div>
       </div>
