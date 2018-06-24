@@ -26,3 +26,7 @@ Route::get('/product', function () {
 Route::get('/about', function () {
     return view('UI.about');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
