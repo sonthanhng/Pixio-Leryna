@@ -39,4 +39,26 @@ class BlogController extends Controller
     $blog->save();
     return redirect('/admin-blog')->with('success', 'Post uploaded successfully');
   }
+  public function getDetail($id, $language = '#') {
+    $blog = Blog::find($id);
+    return view('/admin.blog.edit')->with(['blog' => $blog]);
+  }
+  public function edit(Request $request) {
+    // Update blog
+    $detail=$request->input('blog-content');
+    $dom = new \domdocument();
+    $dom->loadHtml(mb_convert_encoding($detail, 'HTML-ENTITIES', 'UTF-8'));
+    $detail = $dom->savehtml();
+
+    $blog = Blog::find($request->input('blog-id'));
+    if (Input::hasFile('image')) {
+      $file = Input::file('image');
+      $file->move('uploads', $file->getClientOriginalName());
+      $blog->thumbnailUrl = '/uploads/'. $file->getClientOriginalName();
+    }
+    $blog->title = $request->input('blog-name');
+    $blog->content = $detail;
+    $blog->save();
+    return redirect('/admin-blog')->with('success', 'Blog updated successfully');
+  }
 }

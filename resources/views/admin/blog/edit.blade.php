@@ -30,14 +30,8 @@
           {!! Form::open(['url' => 'admin-blog/edit', 'enctype' => 'multipart/form-data']) !!}
           {{Form::text('blog-id', $blog->id, ['class' => 'form-control blog-id', 'id' => 'blog-id'])}}
           <div class="form-group">
-            <select name="blog-language" class="blog-language" id="blog-language">
-              <option value="EN">EN</option>
-              <option value="VIE">VIE</option>
-            </select>
-          </div>
-          <div class="form-group">
             {{Form::label('blog-name', 'Blog Name')}}
-            {{Form::text('blog-name', $blog->name, ['class' => 'form-control blog-name'])}}
+            {{Form::text('blog-name', $blog->title, ['class' => 'form-control blog-name'])}}
           </div>
           <div class="form-group">
             {{Form::textarea('blog-description', $blog->description, ['class' => 'form-control blog-description', 'id' => 'blog-description'])}}

@@ -35,6 +35,8 @@ Route::get('/admin', 'AdminController@index');
 Route::get('/admin-blog', 'BlogController@index');
 Route::get('/upload-blog', 'BlogController@viewUpload');
 Route::post('/admin-blog/upload', 'BlogController@upload');
+Route::get('/admin-editBlog/{id}', 'BlogController@getDetail');
+Route::post('/admin-blog/edit/', 'BlogController@edit');
 
 Route::group(['prefix' => 'api'], function () {
     Route::post('image', ['middleware' => 'auth', 'uses' => 'Api\ImageController@store']);
