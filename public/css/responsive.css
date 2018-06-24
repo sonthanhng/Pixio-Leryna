@@ -1,0 +1,89 @@
+@media only screen and (max-width: 1350px) {
+    #fh5co-our-services .container-fluid .first-col img {
+      height: 100%;
+      width: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #fh5co-about-us .product-section .product-wrap img {
+      width: 100%;
+    }
+    #fh5co-features .row {
+      display: flex;
+    }
+    #fh5co-features .row .col {
+      align-items: stretch;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #fh5co-about-us .header-wrap {
+      z-index: 1;
+    }
+    #fh5co-about-us {
+      margin-top: 0px;
+    }
+    #fh5co-about-us .header {
+      margin-top: 0px;
+    }
+    #fh5co-about-us .product-section .product-wrap {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    #fh5co-about-us .header-wrap {
+      margin-bottom: 20px;
+    }
+    #fh5co-about-us .product-section {
+      margin-top: 0px;
+    }
+    #fh5co-our-services .row {
+      flex-direction: column-reverse;
+    }
+    #fh5co-our-services .container-fluid .first-col img {
+      width: 100%;
+      height: auto;
+    }
+    #fh5co-our-services .container-fluid .second-col .about-leryna-wrap {
+      padding: 40px;
+    }
+    #fh5co-features .row {
+      display: block;
+    }
+    #fh5co-features .container-fluid .col {
+      padding: 40px;
+      padding-top: 0px;
+    }
+    #fh5co-testimonials .col {
+      padding-top: 40px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .product-page #fh5co-about-us .product-section .product-wrap {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .product-page .detail-product .first-col {
+      padding-right: 0px;
+    }
+    .product-page .detail-product .second-col {
+      padding-left: 0px;
+    }
+    .product-page .detail-product .first-col .big-img {
+      width: 100%;
+    }
+    .product-page .detail-product .first-col .small-img {
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 15.8%;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    #fh5co-about-us .header {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+}

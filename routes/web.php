@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('UI.index');
+});
+
+Route::get('/blog', function () {
+    return view('UI.blog');
+});
+
+Route::get('/product', function () {
+    return view('UI.product');
+});
+
+Route::get('/about', function () {
+    return view('UI.about');
 });
