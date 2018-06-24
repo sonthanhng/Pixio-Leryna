@@ -24,13 +24,13 @@ body {
 }
 
 a {
-  color: #6173f4;
+  color: #FFC20F;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #6173f4;
+  color: #FFC20F;
   outline: none;
 }
 
@@ -80,13 +80,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #6173f4 !important;
   }
   #fh5co-header #navbar li a {
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: black; !important;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
   }
   #fh5co-header #navbar li a:hover {
-    color: #6173f4 !important;
+    color: #FFC20F !important;
   }
   #fh5co-header #navbar li a span:before {
     background: transparent !important;
@@ -183,13 +183,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #6173f4;
 }
 #fh5co-header.navbar-fixed-top #navbar li a {
-  color: rgba(0, 0, 0, 0.5);
+  color: black;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 #fh5co-header.navbar-fixed-top #navbar li a:hover {
-  color: #6173f4;
+  color: #FFC20F;
 }
 #fh5co-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
@@ -638,7 +638,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-  background: #6173f4;
+  background: #FFC20F;
 }
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
@@ -652,18 +652,18 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #6173f4;
+  color: #FFC20F;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #6173f4;
+  background: #FFC20F;
   transition: all .2s ease-out;
 }
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #6173f4;
+  background: #FFC20F;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;

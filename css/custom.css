@@ -16,6 +16,16 @@ a:hover {
   text-decoration: none;
 }
 
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.container-fluid .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 #fh5co-about-us .header-wrap {
   background-color: #FFC20F;
   z-index: 2;
@@ -62,12 +72,12 @@ a:hover {
   padding: 0px;
 }
 
-#fh5co-our-services .container-fluid {
+#fh5co-our-services .row {
   padding: 0px;
   display: flex;
 }
 
-#fh5co-our-services .container-fluid .first-col {
+#fh5co-our-services .row .first-col {
   align-items: stretch;
   padding: 0px;
 }
@@ -213,24 +223,24 @@ a:hover {
 }
 
 #fh5co-testimonials .col .post-wrap {
-  padding-bottom: 15px;
+  padding-bottom: 60px;
 }
 
 #fh5co-testimonials .col .post-wrap:hover {
   background-color: #F2F2F2;
+  padding-bottom: 15px;
 }
 
 #fh5co-testimonials .col .post-wrap .btn-read-more {
   color: black;
   font-size: 16px;
   line-height: 24px;
-  padding: 10px 15px;
+  padding: 10px 0px;
   border-radius: 25px;
   background-color: #FFC20F;
   cursor: pointer;
   display: none;
   text-align: center;
-  padding: 10px 0px;
   width: 90px;
   margin-left: 15px;
 }
