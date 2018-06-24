@@ -11,25 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('UI.index');
-});
-
-Route::get('/blog', function () {
-    return view('UI.blog');
-});
-
-Route::get('/product', function () {
-    return view('UI.product');
-});
+Route::get('/', 'HomepageUIController@index');
+Route::get('/product', 'HomepageUIController@getProductPage');
+Route::get('/blog', 'HomepageUIController@getBlogPage');
 
 Route::get('/about', function () {
     return view('UI.about');
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
 
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin-blog', 'BlogController@index');

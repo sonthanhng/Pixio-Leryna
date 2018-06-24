@@ -7,69 +7,17 @@
       <p class="header-section">Sản phẩm</p>
 			<div class="row" id="about-us">
 				<div class="product-section">
-					<div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
+          @if(count($products) > 0)
+						@foreach($products as $product)
+						<div class="col-md-4 product-wrap to-animate fadeInUp animated">
+							<img src="{{$product->thumbnailUrl}}"/>
+							<div class="product-description">
+								<span class="title">{{$product->title}}</span>
+								<a class="btn-buy-now">Mua ngay</a>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
-					<div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
-					<div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
-					<div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
-					<div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
-          <div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
-          <div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
-          <div class="col-md-4 product-wrap to-animate fadeInUp animated">
-						<img src="images/public/products/product1.png"/>
-						<div class="product-description">
-							<span class="title">Dép giấy</span>
-							<a class="btn-buy-now">Mua ngay</a>
-						</div>
-					</div>
+						@endforeach
+					@endif
 				</div>
 			</div>
 		</div>
