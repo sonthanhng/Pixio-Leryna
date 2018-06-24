@@ -29,4 +29,14 @@ Route::get('/about', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
+
+Route::get('/admin', 'AdminController@index');
+Route::get('/admin-blog', 'BlogController@index');
+Route::get('/upload-blog', 'BlogController@viewUpload');
+Route::post('/admin-blog/upload', 'BlogController@upload');
+
+Route::group(['prefix' => 'api'], function () {
+    Route::post('image', ['middleware' => 'auth', 'uses' => 'Api\ImageController@store']);
+    Route::get('image/{image}', 'Api\ImageController@view');
+});
