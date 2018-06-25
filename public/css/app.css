@@ -8354,6 +8354,10 @@ button.close {
   font-family: "Helvetica Neue",Roboto,Arial,"Droid Sans",sans-serif;
 }
 
+.admin-page .thumbnail-img {
+  width: 200px;
+}
+
 .admin-page a {
   color: white;
 }

@@ -30,7 +30,8 @@
             <textarea id="product-content" name="product-content"></textarea>
           </div>
           <div class="form-group">
-            {{Form::file('image', ['placeholder' => 'Select thumbnail image'])}}
+            {!! Form::file('gallery[]', array('multiple'=>true,'accept'=>'image/*'))  !!}
+            <!-- {{Form::file('image', ['placeholder' => 'Select thumbnail image'])}} -->
           </div>
           <div>
             {{Form::submit('Upload', ['class' => 'btn btn-primary'])}}

@@ -7,11 +7,19 @@
       <p class="header-section">Sản phẩm</p>
       <div class="col-md-6 first-col">
         <img class="big-img" src="{{$product->thumbnailUrl}}"/>
-        <img class="small-img" style="margin-left: 0px;" src="{{ asset('images/public/products/product1.png') }}"/>
-        <img class="small-img" src="{{ asset('images/public/products/product1.png') }}"/>
-        <img class="small-img" src="{{ asset('images/public/products/product1.png') }}"/>
-        <img class="small-img" src="{{ asset('images/public/products/product1.png') }}"/>
-        <img class="small-img" src="{{ asset('images/public/products/product1.png') }}"/>
+        <?php $countSmallImages = 0; ?>
+        @if(count($imagesProduct) > 0)
+          @foreach($imagesProduct as $imageProduct)
+            <?php
+              $style = "";
+              $countSmallImages++;
+              if ($countSmallImages == 1) {
+                $style = "margin-left: 0px;";
+              }
+            ?>
+            <img class="small-img" style="<?php echo $style ?>" src="{{ $imageProduct->link }}"/>
+          @endforeach
+        @endif
       </div>
       <div class="col-md-6 second-col">
         <p class="title">{{$product->title}}</p>

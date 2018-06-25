@@ -29,7 +29,7 @@ $(document).ready(function() {
 function deleteProduct(id) {
   console.log(id);
   $('#deleteModal').modal('show');
-  document.getElementById('delete-product-btn').href = "/admin-product/delete/" + id.toString();
+  document.getElementById('delete-product-btn').href = "/admin-deleteProduct/" + id.toString();
 }
 
 function uploadImage(file) {

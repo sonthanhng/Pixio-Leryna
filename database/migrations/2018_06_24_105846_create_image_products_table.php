@@ -15,7 +15,7 @@ class CreateImageProductsTable extends Migration
     {
         Schema::create('image_products', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('blog_id');
+            $table->string('product_id');
             $table->string('link');
             $table->timestamps();
         });

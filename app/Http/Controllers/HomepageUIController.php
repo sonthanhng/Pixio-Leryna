@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Blog;
+use App\ImageProduct;
 use App\Helpers\Html2Text;
 
 class HomepageUIController extends Controller
@@ -40,6 +41,10 @@ class HomepageUIController extends Controller
     public function getProductDetailPage($id) {
       $product = Product::find($id);
       $products = Product::paginate(6);
-      return view('UI.product-detail')->with(["product" => $product, "products" => $products]);
+      $matchThese = [
+        'product_id' => $product->id
+       ];
+      $imagesProduct = ImageProduct::where($matchThese)->get();
+      return view('UI.product-detail')->with(["product" => $product, "products" => $products, "imagesProduct" => $imagesProduct]);
     }
 }

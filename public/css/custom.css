@@ -68,6 +68,10 @@ a:hover {
   padding-bottom: 30px;
 }
 
+#fh5co-about-us .product-section .product-wrap img {
+  width: 100%;
+}
+
 #fh5co-our-services {
   padding: 0px;
 }
