@@ -63,14 +63,14 @@
 		            <li><a href="/products"><span>Sản phẩm</span></a></li>
 		            <li><a href="/about"><span>Về Leryna</span></a></li>
 		            <li><a href="/blogs"><span>Blog</span></a></li>
-		            <!-- <li><a href="/contact"><span>Liên hệ</span></a></li> -->
+								<li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
 		          </ul>
 		        </div>
 			    </nav>
 		  </div>
 	</header>
   @yield('content')
-  <footer id="footer" role="contentinfo">
+  <footer id="footer" data-section="contact" role="contentinfo">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
