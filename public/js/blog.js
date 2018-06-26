@@ -29,7 +29,7 @@ $(document).ready(function() {
 function deleteBlog(id) {
   console.log(id);
   $('#deleteModal').modal('show');
-  document.getElementById('delete-blog-btn').href = "/admin-blog/delete/" + id.toString();
+  document.getElementById('delete-blog-btn').href = "/admin-deleteBlog/" + id.toString();
 }
 
 function uploadImage(file) {

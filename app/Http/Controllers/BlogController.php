@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use File;
 use Illuminate\Http\Request;
 use App\Blog;
 use App\Helpers\Html2Text;
@@ -60,5 +61,11 @@ class BlogController extends Controller
     $blog->content = $detail;
     $blog->save();
     return redirect('/admin-blog')->with('success', 'Blog updated successfully');
+  }
+  public function delete($id) {
+    $blog = Blog::find($id);
+    File::delete(public_path().$blog->thumbnailUrl);
+    $blog->delete();
+    return redirect('/admin-blog')->with('success', 'Blog deleted successfully');
   }
 }

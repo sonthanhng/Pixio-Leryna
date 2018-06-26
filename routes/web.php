@@ -28,6 +28,7 @@ Route::get('/admin-blog', 'BlogController@index');
 Route::get('/upload-blog', 'BlogController@viewUpload');
 Route::post('/admin-blog/upload', 'BlogController@upload');
 Route::get('/admin-editBlog/{id}', 'BlogController@getDetail');
+Route::get('/admin-deleteBlog/{id}', 'BlogController@delete');
 Route::post('/admin-blog/edit/', 'BlogController@edit');
 
 Route::group(['prefix' => 'api'], function () {
