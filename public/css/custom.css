@@ -155,19 +155,19 @@ a:hover {
   color: #4D4D4D;
 }
 
-#fh5co-features .container-fluid .first-col {
+#fh5co-features .container-fluid .col:hover {
   background-color: #FFC20F;
 }
 
-#fh5co-features .container-fluid .first-col .number {
+#fh5co-features .container-fluid .col:hover .number {
   color: black;
 }
 
-#fh5co-features .container-fluid .first-col .title {
+#fh5co-features .container-fluid .col:hover .title {
   color: black;
 }
 
-#fh5co-features .container-fluid .first-col .description {
+#fh5co-features .container-fluid .col:hover .description {
   color: #4D4D4D;
 }
 

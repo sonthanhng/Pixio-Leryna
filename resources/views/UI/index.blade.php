@@ -65,7 +65,7 @@
 	<div id="fh5co-features" data-section="features">
 		<div class="container-fluid">
 			<div class="row">
-			<div class="col-md-4 col-xs-12 col first-col">
+			<div class="col-md-4 col-xs-12 col">
 				<p class="number">01</p>
 				<p class="title">Chất lượng hàng đầu</p>
 				<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
