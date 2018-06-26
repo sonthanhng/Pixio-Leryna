@@ -23,14 +23,17 @@
 	<div id="fh5co-about-us" data-section="about">
 		<div class="container">
 			<div class="row" id="about-us">
-				<div class="col-md-8 col-xs-12 header-wrap">
-					<h2 class="to-animate header">Công ty xuất khẩu dép xốp hàng đầu Việt Nam</h2>
+				<div class="row" style="margin: 0px;">
+					<div class="col-md-8 col-xs-12 header-wrap">
+						<h2 class="to-animate header">Công ty xuất khẩu dép xốp hàng đầu Việt Nam</h2>
+					</div>
 				</div>
-				<div class="product-section">
+				<div class="product-section row">
 					@if(count($products) > 0)
 						@foreach($products as $product)
-						<div class="col-md-4 product-wrap to-animate fadeInUp animated">
-							<img src="{{$product->thumbnailUrl}}"/>
+						<div class="col-md-4 col-xs-12 product-wrap to-animate fadeInUp animated">
+							<div style="background: url({{$product->thumbnailUrl}}); background-size: cover; height: 300px; width: 100%;">
+              </div>
 							<div class="product-description">
 								<span class="title">{{$product->title}}</span>
 								<a class="btn-buy-now" href="/products/{{$product->id}}">Mua ngay</a>
