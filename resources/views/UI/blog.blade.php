@@ -27,7 +27,7 @@
     								<p class="title">{{$blog->title}}</p>
     								<p class="content">{{$blog->description}}</p>
     							</div>
-    							<a class="btn-read-more">Đọc tiếp..</a>
+                  <a class="btn-read-more" href="/blogs/{{$blog->id}}">Đọc tiếp..</a>
     						</div>
     					</div>
     				@endforeach

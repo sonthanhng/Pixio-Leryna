@@ -5,21 +5,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Leryna</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
-
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -59,11 +44,11 @@
 		        </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="/"><span>Trang chủ</span></a></li>
-		            <li><a href="/products"><span>Sản phẩm</span></a></li>
-		            <li><a href="/about"><span>Về Leryna</span></a></li>
-		            <li><a href="/blogs"><span>Blog</span></a></li>
-								<li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+		            <li class="homepage-tab {{ (Request::is('/') ? 'active' : '') }}"><a href="/"><span>Trang chủ</span></a></li>
+		            <li class="{{ (Request::is('products/*') || Request::is('products') || Request::is('product/*') ? 'active' : '') }}"><a href="/products"><span>Sản phẩm</span></a></li>
+		            <li class="{{ (Request::is('about') ? 'active' : '') }}"><a href="/about"><span>Về Leryna</span></a></li>
+		            <li class="{{ (Request::is('blogs/*') || Request::is('blogs') ? 'active' : '') }}"><a href="/blogs"><span>Blog</span></a></li>
+								<li class="contact-tab"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
 		          </ul>
 		        </div>
 			    </nav>
