@@ -13,6 +13,10 @@
 		    	<div class="container" style="position: relative;">
 		    	</div>
 		    </div>
+				<div class="item" style="background: url('images/public/slider1.png'); height: 500px;">
+		    	<div class="container" style="position: relative;">
+		    	</div>
+		    </div>
 		</div>
 	</div>
 
