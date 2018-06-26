@@ -30,6 +30,7 @@ class ImageController extends Controller
 
     public function store(Request $request)
     {
+        ini_set('memory_limit','256M');
         $extension = $request->file('file')->getClientOriginalExtension();
         $fileName = uniqid() . '.' . $extension;
         $destination = storage_path() . '/uploads';
