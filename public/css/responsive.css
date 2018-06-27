@@ -77,6 +77,12 @@
       margin-right: 5px;
       width: 15.8%;
     }
+    #fh5co-features .desktop {
+      display: none;
+    }
+    #fh5co-features .mobile {
+      display: block;
+    }
 }
 
 @media only screen and (max-width: 728px) {

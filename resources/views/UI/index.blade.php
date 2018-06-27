@@ -63,7 +63,7 @@
 	</div>
 
 	<div id="fh5co-features" data-section="features">
-		<div class="container-fluid">
+		<div class="container-fluid desktop">
 			<div class="row">
 			<div class="col-md-4 col-xs-12 col">
 				<p class="number">01</p>
@@ -81,6 +81,30 @@
 				<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 			</div>
 		</div>
+		</div>
+	</div>
+
+	<div id="fh5co-features" data-section="features">
+		<div class="container-fluid mobile">
+			<div class="owl-carousel owl-carousel-fullwidth">
+				<!-- You may change the background color here. -->
+					<div class="item col">
+						<p class="number">01</p>
+						<p class="title">Chất lượng hàng đầu</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					</div>
+				<!-- You may change the background color here.  -->
+					<div class="item col">
+						<p class="number">02</p>
+						<p class="title">Uy tín số một</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					</div>
+					<div class="item col">
+						<p class="number">03</p>
+						<p class="title">Giá cả hợp lý</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					</div>
+			</div>
 		</div>
 	</div>
 

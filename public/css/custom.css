@@ -128,6 +128,10 @@ a:hover {
   padding: 0px;
 }
 
+#fh5co-features .mobile {
+  display: none;
+}
+
 #fh5co-features .container-fluid {
   padding: 0px;
 }
