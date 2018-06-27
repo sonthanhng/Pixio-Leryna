@@ -4,16 +4,16 @@
 	<div id="slider" data-section="home">
 		<div class="owl-carousel owl-carousel-fullwidth">
 			<!-- You may change the background color here. -->
-		    <div class="item" style="background: url('images/public/slider1.png'); height: 500px;">
+		    <div class="item" style="background: url('images/public/slider1.png'); height: 500px; background-size: 100%">
 		    	<div class="container" style="position: relative;">
 		    	</div>
 		    </div>
 			<!-- You may change the background color here.  -->
-		    <div class="item" style="background: url('images/public/slider1.png'); height: 500px;">
+		    <div class="item" style="background: url('images/public/slider2.jpg'); height: 500px; background-size: 100%">
 		    	<div class="container" style="position: relative;">
 		    	</div>
 		    </div>
-				<div class="item" style="background: url('images/public/slider1.png'); height: 500px;">
+				<div class="item" style="background: url('images/public/slider3.jpg'); height: 500px; background-size: 100%">
 		    	<div class="container" style="position: relative;">
 		    	</div>
 		    </div>
