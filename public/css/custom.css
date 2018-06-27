@@ -64,6 +64,11 @@ a:hover {
   bottom: 8px;
 }
 
+#fh5co-about-us #about-us {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 #fh5co-about-us .product-section .btn-buy-now:hover {
   border: 1px solid white;
   color: white;
@@ -72,6 +77,11 @@ a:hover {
 
 #fh5co-about-us .product-section .product-wrap {
   padding-bottom: 30px;
+}
+
+#fh5co-about-us .product-section .product-wrap:hover .product-hover{
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
 }
 
 #fh5co-about-us .product-section .product-wrap img {

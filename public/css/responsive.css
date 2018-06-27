@@ -18,11 +18,20 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .owl-carousel-fullwidth.owl-theme .owl-dots {
+      text-align: center;
+      padding-right: 0px;
+      margin-bottom: 10px;
+    }
     #fh5co-about-us .header-wrap {
       z-index: 1;
     }
     #fh5co-about-us {
       margin-top: 0px;
+    }
+    #fh5co-about-us .container {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     #fh5co-about-us .header {
       margin-top: 0px;
