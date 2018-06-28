@@ -80,8 +80,8 @@
 	<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 
 	<!-- Main JS (Do not remove) -->
-	<script src="{{ asset('js/modal-control.js') }}"></script>
 	<script src="{{ asset('js/main.js') }}"></script>
+	<script src="{{ asset('js/modal-control.js') }}"></script>
 
 	</body>
 </html>
