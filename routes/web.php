@@ -44,3 +44,5 @@ Route::post('/admin-product/edit/', 'ProductController@edit');
 Route::get('/admin-deleteProduct/{id}', 'ProductController@delete');
 
 Route::post('/order', 'HomepageUIController@order');
+
+Route::get('/admin-order', 'AdminController@listOrder');

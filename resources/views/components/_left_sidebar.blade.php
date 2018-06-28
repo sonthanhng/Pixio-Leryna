@@ -31,6 +31,17 @@
           </ul>
         </div>
       </div>
+      <div class="item-admin">
+        <div class="item-big-element">
+          <div class="select-item-wrap">
+            <i class="fa fa fa-gears"></i>
+            <span> Order</span>
+          </div>
+          <ul class="child-el-wrap">
+            <a href="/admin-order"><li>List Orders</li></a>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </div>
