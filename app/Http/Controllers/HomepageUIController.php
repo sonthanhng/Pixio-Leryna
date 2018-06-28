@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Blog;
+use App\Order;
 use App\ImageProduct;
 use App\Helpers\Html2Text;
 
@@ -43,8 +44,17 @@ class HomepageUIController extends Controller
       $products = Product::paginate(6);
       $matchThese = [
         'product_id' => $product->id
-       ];
+      ];
       $imagesProduct = ImageProduct::where($matchThese)->get();
       return view('UI.product-detail')->with(["product" => $product, "products" => $products, "imagesProduct" => $imagesProduct]);
+    }
+
+    public function order(Request $request) {
+      $order = new Order;
+      $order->name = $request->all()["name"];
+      $order->email = $request->all()["email"];
+      $order->phonenumber = $request->all()["phonenumber"];
+      $order->number = $request->all()["number"];
+      $order->save();
     }
 }
