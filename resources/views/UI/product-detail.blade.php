@@ -60,17 +60,17 @@
       <span class="close">&times;</span>
       <p class="header">Liên hệ</p>
       <p class="title">Họ và tên</p>
-      <input type="text"/>
+      <input type="text" class="input-information"/>
       <p class="title">Email</p>
-      <input type="text"/>
+      <input type="text" class="input-information"/>
       <div class="row">
         <div class="col-md-6">
           <p class="title">Số điện thoại</p>
-          <input type="text"/>
+          <input type="text" class="input-information"/>
         </div>
         <div class="col-md-6">
           <p class="title">Số lượng mua</p>
-          <input type="text"/>
+          <input type="text" class="input-information"/>
         </div>
       </div>
       <div style="text-align: right; padding-top: 30px;" class="row">

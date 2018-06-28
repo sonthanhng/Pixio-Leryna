@@ -421,7 +421,7 @@ a:hover {
   background-color: #F2F2F2;
   border: none;
   height: 50px;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .blog-content-section {
