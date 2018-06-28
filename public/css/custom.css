@@ -387,6 +387,25 @@ a:hover {
   margin-left: 25%;
 }
 
+#thanks-modal {
+  padding-top: 100px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#thanks-modal .modal-content {
+  text-align: center;
+}
+
+#thanks-modal .modal-content .thanks-text {
+  font-family: Merriweather-Regular;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #FFC20F;
+  margin-bottom: 10px;
+}
+
 .modal-content {
   padding: 50px;
 }

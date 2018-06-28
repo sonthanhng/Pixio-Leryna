@@ -101,18 +101,19 @@
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
 				$('.active').removeClass("active");
-				$('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset().top
-		    }, 500);
+				if ($('[data-section="' + section + '"]') && $('[data-section="' + section + '"]').offset()) {
+					$('html, body').animate({
+							scrollTop: $('[data-section="' + section + '"]').offset().top
+					}, 500);
+					event.preventDefault();
+				 	return false;
+				}
 				$('.contact-tab').addClass("active");
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
 		    	navbar.attr('aria-expanded', 'false');
 		    	//$('.js-fh5co-nav-toggle').removeClass('active');
 		    }
-
-		    event.preventDefault();
-		    return false;
 		});
 
 	};

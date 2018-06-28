@@ -24,9 +24,10 @@
       <div class="col-md-6 second-col">
         <p class="title">{{$product->title}}</p>
         <p class="description"><?php echo $product->content ?></p>
-        <a class="btn-contact">Liên hệ</a>
+        <a class="btn-contact" id="btn-contact">Liên hệ</a>
       </div>
     </div>
+
     <div id="fh5co-about-us" data-section="about">
   		<div class="container">
         <p class="header-section">Sản phẩm khác</p>
@@ -60,17 +61,17 @@
       <span class="close">&times;</span>
       <p class="header">Liên hệ</p>
       <p class="title">Họ và tên</p>
-      <input type="text" class="input-information"/>
+      <input type="text" class="input-information" id="client-name"/>
       <p class="title">Email</p>
-      <input type="text" class="input-information"/>
+      <input type="text" class="input-information" id="client-email"/>
       <div class="row">
         <div class="col-md-6">
           <p class="title">Số điện thoại</p>
-          <input type="text" class="input-information"/>
+          <input type="text" class="input-information" id="client-phonenumber"/>
         </div>
         <div class="col-md-6">
           <p class="title">Số lượng mua</p>
-          <input type="text" class="input-information"/>
+          <input type="text" class="input-information" id="client-number"/>
         </div>
       </div>
       <div style="text-align: right; padding-top: 30px;" class="row">
@@ -80,9 +81,19 @@
           </p>
         </div>
         <div class="col-md-6">
-          <a class="btn-contact">Gửi yêu cầu</a>
+          <a class="btn-contact" id="btn-send-request">Gửi yêu cầu</a>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div id="thanks-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <p class="thanks-text">Thank you</p>
+      <p>Cảm ơn bạn đã mua hàng<br />Chúng tôi đã nhận được thông tin và sẽ liên lạc với bạn trong thời gian sớm nhất</p>
+      <a class="btn-contact" id="btn-keep-buy">Tiếp tục mua hàng</a>
+      <a class="btn-contact" href="/">Quay lại trang chủ</a>
     </div>
   </div>
 @endsection
