@@ -462,6 +462,6 @@ a:hover {
   line-height: 24px;
 }
 
-#slider .item {
-  background-size: 100%;
+.owl-carousel-fullwidth .item {
+  background-size: 100% !important;
 }
