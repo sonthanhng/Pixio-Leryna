@@ -3,6 +3,9 @@
       height: 100%;
       width: auto;
     }
+    #slider .item {
+      background-size: cover;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
