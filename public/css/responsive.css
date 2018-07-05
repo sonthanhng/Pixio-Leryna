@@ -100,6 +100,12 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+  #fh5co-header {
+    position: fixed;
+  }
+}
+
 @media only screen and (max-width: 728px) {
     #fh5co-about-us .header {
       padding-left: 20px;
@@ -107,4 +113,13 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+}
+
+
+#fh5co-features .owl-carousel .owl-stage {
+    display: flex;
+}
+
+.owl-carousel .owl-item .item {
+    height: 100%;
 }
