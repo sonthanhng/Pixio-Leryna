@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div id="fh5co-our-services" data-section="services">
+<div id="fh5co-our-services" data-section="services" style="margin-top: 65px;">
   <div class="container-fluid">
     <div class="row about-wrap">
       <div class="col-md-6 first-col col-xs-12">

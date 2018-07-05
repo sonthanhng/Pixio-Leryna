@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
-	<div id="slider" data-section="home">
+	<div id="slider" data-section="home" style="margin-top: 65px;">
 		<div class="owl-carousel owl-carousel-fullwidth">
 			<!-- You may change the background color here. -->
 		    <!-- <div class="item" style="background: url('images/public/slider1.png'); height: 500px; background-size: 100%">

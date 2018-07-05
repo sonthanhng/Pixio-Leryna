@@ -50,7 +50,15 @@ class HomepageUIController extends Controller
       $blog = Blog::find($id);
       $blogs = Blog::paginate(3);
       for($i = 0; $i < count($blogs); $i++) {
-        $blogs[$i]->description = substr(Html2Text::convert($blogs[$i]->content), 0, min(strlen(Html2Text::convert($blogs[$i]->content)), 100));
+        $blogDesc = Html2Text::convert($blogs[$i]->content);
+        $l = strlen($blogDesc);
+        for($j = 100; $j < strlen($blogDesc); $j++) {
+            if ($blogDesc[$j] == ' ') {
+                $l = $j;
+                break;
+            }
+        }
+        $blogs[$i]->description = substr($blogDesc, 0, $l)."...";
       }
       return view('UI.blog-detail')->with(['blog' => $blog, 'blogs' => $blogs]);
     }

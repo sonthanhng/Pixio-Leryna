@@ -2,24 +2,24 @@
 @extends('layouts.home')
 
 @section('content')
-  <div class="product-page">
+  <div class="product-page" style="margin-top: 70px;">
     <div class="detail-product container">
       <p class="header-section">Sản phẩm</p>
       <div class="col-md-6 first-col">
         <img class="big-img" src="{{$product->thumbnailUrl}}"/>
-        <?php $countSmallImages = 0; ?>
-        @if(count($imagesProduct) > 0)
-          @foreach($imagesProduct as $imageProduct)
+        <!-- <?php $countSmallImages = 0; ?> -->
+        <!-- @if(count($imagesProduct) > 0)
+          @foreach($imagesProduct as $imageProduct) -->
             <?php
-              $style = "";
-              $countSmallImages++;
-              if ($countSmallImages == 1) {
-                $style = "margin-left: 0px;";
-              }
+              // $style = "";
+              // $countSmallImages++;
+              // if ($countSmallImages == 1) {
+              //   $style = "margin-left: 0px;";
+              // }
             ?>
-            <img class="small-img" style="<?php echo $style ?>" src="{{ $imageProduct->link }}"/>
-          @endforeach
-        @endif
+            <!-- <img class="small-img" style="<?php //echo $style ?>" src="{{ $imageProduct->link }}"/> -->
+          <!-- @endforeach
+        @endif -->
       </div>
       <div class="col-md-6 second-col">
         <p class="title">{{$product->title}}</p>

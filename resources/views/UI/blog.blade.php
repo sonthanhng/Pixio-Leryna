@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
-  <div class="blog-page">
+  <div class="blog-page" style="margin-top: 70px;">
     <div id="fh5co-testimonials" data-section="testimonials">
   		<div class="container">
   			<p class="header-section">Blog</p>
