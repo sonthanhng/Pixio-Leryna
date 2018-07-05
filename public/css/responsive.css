@@ -21,6 +21,9 @@
 }
 
 @media only screen and (max-width: 991px) {
+    #fh5co-features .container-fluid .row {
+      display: block;
+    }
     .owl-carousel-fullwidth.owl-theme .owl-dots {
       text-align: center;
       padding-right: 0px;

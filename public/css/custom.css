@@ -142,6 +142,10 @@ a:hover {
   display: none;
 }
 
+#fh5co-features .container-fluid .row {
+  display: flex;
+}
+
 #fh5co-features .container-fluid {
   padding: 0px;
 }
