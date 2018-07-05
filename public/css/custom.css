@@ -220,6 +220,7 @@ a:hover {
 
 #fh5co-testimonials .col {
   margin-top: 30px;
+  display: flex;
 }
 
 #fh5co-testimonials .first-col {
@@ -236,6 +237,7 @@ a:hover {
 }
 
 #fh5co-testimonials .col img {
+  height: 250px;
   width: 100%;
 }
 

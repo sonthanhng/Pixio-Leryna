@@ -1,3 +1,7 @@
+#fh5co-testimonials .blog-section {
+  display: flex;
+}
+
 @media only screen and (max-width: 1350px) {
     #fh5co-our-services .container-fluid .first-col img {
       height: 100%;
@@ -96,6 +100,12 @@
       display: none;
     }
     #fh5co-features .mobile {
+      display: block;
+    }
+    #fh5co-testimonials .blog-section {
+      display: block;
+    }
+    #fh5co-testimonials .col {
       display: block;
     }
 }
