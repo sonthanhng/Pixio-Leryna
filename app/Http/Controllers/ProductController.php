@@ -17,7 +17,15 @@ class ProductController extends Controller
   public function index() {
     $products = Product::all();
     for($i = 0; $i < count($products); $i++) {
-      $products[$i]->description = substr(Html2Text::convert($products[$i]->content), 0, min(strlen(Html2Text::convert($products[$i]->content)), 100));
+      $productDesc = Html2Text::convert($products[$i]->content);
+      $l = strlen($productDesc);
+      for($j = 101; $j < strlen($productDesc); $j++) {
+          if ($productDesc[$j] == ' ') {
+              $l = $j;
+              break;
+          }
+      }
+      $products[$i]->description = substr($productDesc, 0, $l)."...";
     }
     return view('admin.product.index')->with(["products" => $products]);
   }
