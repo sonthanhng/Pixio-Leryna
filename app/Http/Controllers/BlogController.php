@@ -40,8 +40,9 @@ class BlogController extends Controller
     $blog = new Blog;
     if (Input::hasFile('image')) {
       $file = Input::file('image');
-      $file->move('uploads', $file->getClientOriginalName());
-      $blog->thumbnailUrl = '/uploads/'. $file->getClientOriginalName();
+      $fileName = uniqid().'.'.$file->getClientOriginalExtension();
+      $file->move('uploads', $fileName);
+      $blog->thumbnailUrl = '/uploads/'. $fileName;
     }
     $blog->content = $detail;
     $blog->title = $request->input('blog-name');
@@ -62,8 +63,9 @@ class BlogController extends Controller
     $blog = Blog::find($request->input('blog-id'));
     if (Input::hasFile('image')) {
       $file = Input::file('image');
-      $file->move('uploads', $file->getClientOriginalName());
-      $blog->thumbnailUrl = '/uploads/'. $file->getClientOriginalName();
+      $fileName = uniqid().'.'.$file->getClientOriginalExtension();
+      $file->move('uploads', $fileName);
+      $blog->thumbnailUrl = '/uploads/'. $fileName;
     }
     $blog->title = $request->input('blog-name');
     $blog->content = $detail;

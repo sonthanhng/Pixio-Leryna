@@ -43,11 +43,10 @@ class ProductController extends Controller
     $files = $request->file('gallery');
     if($request->hasFile('gallery')) {
         foreach ($files as $file) {
-           // $file->store('users/' . $this->user->id . '/messages');
-            //dump($file);
-          $file->move('uploads', $file->getClientOriginalName());
+          $fileName = uniqid().'.'.$file->getClientOriginalExtension();
+          $file->move('uploads', $fileName);
           if (!$count) {
-            $product->thumbnailUrl = '/uploads/'. $file->getClientOriginalName();
+            $product->thumbnailUrl = '/uploads/'. $fileName;
           }
           $count++;
         }
@@ -58,14 +57,14 @@ class ProductController extends Controller
     $count = 0;
     if($request->hasFile('gallery')) {
         foreach ($files as $file) {
-           // $file->store('users/' . $this->user->id . '/messages');
-            //dump($file);
-          if (!$count) {
-            $product->thumbnailUrl = '/uploads/'. $file->getClientOriginalName();
+           if (!$count) {
+            $fileName = uniqid().'.'.$file->getClientOriginalExtension();
+            $product->thumbnailUrl = '/uploads/'. $fileName;
           } else {
             $imageProduct = new ImageProduct;
             $imageProduct->product_id = $product->id;
-            $imageProduct->link = '/uploads/'. $file->getClientOriginalName();
+            $fileName = uniqid().'.'.$file->getClientOriginalExtension();
+            $imageProduct->link = '/uploads/'. $fileName;
             $imageProduct->save();
           }
           $count++;
@@ -87,8 +86,9 @@ class ProductController extends Controller
     $product = Product::find($request->input('product-id'));
     if (Input::hasFile('image')) {
       $file = Input::file('image');
-      $file->move('uploads', $file->getClientOriginalName());
-      $product->thumbnailUrl = '/uploads/'. $file->getClientOriginalName();
+      $fileName = uniqid().'.'.$file->getClientOriginalExtension();
+      $file->move('uploads', $fileName);
+      $product->thumbnailUrl = '/uploads/'. $fileName;
     }
     $product->title = $request->input('product-name');
     $product->content = $detail;
