@@ -59,7 +59,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="text-center">hello@leryna.com<br />+84 123 456 789<br>55 Phạm Văn Hai, P.2, Q.Tân Bình, TP.HCM</p>
+					<p class="text-center">depxopnails@yahoo.com<br /> 0962 144 072 - 0962 788 854 - 0962 977 721<br> 622/7 Xa Lộ Hà Nội, P. Phước Bình, Quận 9, HCM</p>
 				</div>
 			</div>
 		</div>

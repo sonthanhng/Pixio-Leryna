@@ -9,11 +9,11 @@
 		    	</div>
 		    </div> -->
 			<!-- You may change the background color here.  -->
-		    <div class="item" style="background: url('images/public/slider2.jpg'); height: 500px;">
+		    <div class="item" style="background: url('images/public/slider2.jpg'); height: 650px; background-size: cover; background-repeat: no-repeat">
 		    	<div class="container" style="position: relative;">
 		    	</div>
 		    </div>
-				<div class="item" style="background: url('images/public/slider3.jpg'); height: 500px;">
+				<div class="item" style="background: url('images/public/slider3.jpg'); height: 650px; background-size: cover; background-repeat: no-repeat">
 		    	<div class="container" style="position: relative;">
 		    	</div>
 		    </div>
@@ -25,7 +25,7 @@
 			<div class="row" id="about-us">
 				<div class="row" style="margin: 0px;">
 					<div class="col-md-8 col-xs-12 header-wrap">
-						<h2 class="to-animate header">Nhà sản xuất tiên phong các sản phẩm tiệm nails salon</h2>
+						<h2 class="to-animate header">Nhà sản xuất các sản phẩm Nails chất lượng - uy tín - giá cả hợp lý</h2>
 					</div>
 				</div>
 				<div class="product-section row">
@@ -39,7 +39,7 @@
 								</div>
 								<div class="product-description">
 									<span class="title">{{$product->title}}</span>
-									<a class="btn-buy-now" href="/products/{{$product->id}}">Mua ngay</a>
+									<a class="btn-buy-now" href="/products/{{$product->id}}">Thông tin</a>
 								</div>
 							</a>
 						</div>
