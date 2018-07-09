@@ -12,7 +12,7 @@ use App\Helpers\Html2Text;
 class HomepageUIController extends Controller
 {
     public function index() {
-      $products = Product::paginate(6);
+      $products = Product::paginate(9);
       $blogs = Blog::paginate(3);
       for($i = 0; $i < count($blogs); $i++) {
       $blogDesc = Html2Text::convert($blogs[$i]->content);

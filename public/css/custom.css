@@ -296,6 +296,11 @@ a:hover {
   line-height: 24px;
 }
 
+.product-page .detail-product .second-col img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .product-page #fh5co-about-us {
   margin-top: 30px;
 }
