@@ -48,7 +48,7 @@
 		            <li class="{{ (Request::is('products/*') || Request::is('products') || Request::is('product/*') ? 'active' : '') }}"><a href="/products"><span>Sản phẩm</span></a></li>
 		            <li class="{{ (Request::is('about') ? 'active' : '') }}"><a href="/about"><span>Về Leryna</span></a></li>
 		            <li class="{{ (Request::is('blogs/*') || Request::is('blogs') ? 'active' : '') }}"><a href="/blogs"><span>Blog</span></a></li>
-								<li class="contact-tab"><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+								<li class="contact-tab"><a href="#" data-nav-section="contact"><span>Liên hệ</span></a></li>
 		          </ul>
 		        </div>
 			    </nav>
@@ -59,7 +59,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="text-center">depxopnails@yahoo.com<br /> 0962 144 072 - 0962 788 854 - 0962 977 721<br> 622/7 Xa Lộ Hà Nội, P. Phước Bình, Quận 9, HCM</p>
+					<p class="text-center">depxopnails@yahoo.com<br /> (+84) 962 144 072 - (+84) 962 977 721<br> 622/7 Xa Lộ Hà Nội, P. Phước Bình, Quận 9, TP. HCM/p>
 				</div>
 			</div>
 		</div>

@@ -39,7 +39,7 @@
 								</div>
 								<div class="product-description">
 									<span class="title">{{$product->title}}</span>
-									<a class="btn-buy-now" href="/products/{{$product->id}}">Thông tin</a>
+									<a class="btn-buy-now" href="/products/{{$product->id}}">Chi tiết</a>
 								</div>
 							</a>
 						</div>
